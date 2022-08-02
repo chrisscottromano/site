@@ -1,0 +1,150 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  height:fit-content;
+  width: 95vw;
+  margin-top: 0vh;
+  z-index: 25;
+  color: #260101;
+  position: relative;
+}
+
+.tabs label {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background-color: #B8D3D9;
+  font-weight: bold;
+  transition: background ease 0.7s;
+}
+
+.tabs .tab {
+  order: 9;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: 1rem;
+  background: whitesmoke;
+  padding: 20px;
+  box-shadow: -10px 10px 0px 0px black;
+  border-top-right-radius: 0%;
+}
+
+.tabs input[type=radio] {
+  display: none;
+}
+
+.tabs input[type=radio]:checked + label {
+  background: whitesmoke;
+}
+
+.tabs input[type=radio]:checked + label + .tab {
+  display: block;
+}
+
+@media (max-width: 465px) {
+  .tabs .tab,
+.tabs label {
+    order: initial;
+  }
+
+  .tabs label {
+    width: 100%;
+    margin-left: 50px;
+  }
+}
+body {
+  background: #5D8C84; 
+  box-sizing: border-box;
+  padding-top: 0vh;
+  font-weight: 300;
+  line-height: 1.5;
+  min-width: 100vw;
+  margin: auto;
+  font-size: 125%;
+  display: flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items: center;
+  font-family: 'Abhaya Libre', serif;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  display: block;
+  background-color: #B8D3D9;
+  color: #260101;
+  cursor: pointer;
+  padding: 18px;
+  width: 75vw;
+  margin: auto;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  box-shadow: -5px 5px 0px 0px black;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: whitesmoke;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0;
+  display: none;
+  background-color: white;
+  height: 80vh;
+  width: 75vw;
+  margin: auto;
+  margin-bottom: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.pic{
+position: absolute;
+  top: 0%;
+  right: 12%;
+transform: rotate(17deg);
+opacity: 0.3;
+}
+
+.pic:hover{
+opacity: 1;  }
+
+.b2{
+  padding-top: 2vh;
+  text-align: center;
+font-size: 3em;
+color: white;
+}
+
+
+.b3 {
+  margin-top: -2vh;
+  text-align: center;
+  font-size: 1.35em;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+}
+  
+img{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+}
+
+.poem {
+  font-family: 'Alegreya', serif;
+text-align: center;
+
+}
